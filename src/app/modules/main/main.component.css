@@ -1,0 +1,51 @@
+
+.content {
+  display: flex;
+  margin: 82px auto 32px;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+  color: var(--primary) !important;
+}
+
+::ng-deep.mat-form-field-underline {
+  background-color: var(--primary) !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+  background-color: var(--primary) !important;
+}
+
+table {
+  width: 100%;
+}
+
+table th, td {
+  font-size: var(--font_large);
+  font-weight: bold;
+  text-align: center;
+}
+
+table tr:hover td {
+  cursor: pointer;
+  background-color: var(--disabled);
+  transition: 0.3s linear;
+}
+
+.buttons {
+  background-color: var(--primary) !important;
+  color: var(--enabled);
+  margin-bottom: 10px;
+}
+
+.select, .buttons {
+  width: 300px;
+  text-align: center;
+}
+
+
+
