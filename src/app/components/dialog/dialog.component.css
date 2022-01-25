@@ -1,0 +1,28 @@
+.dialogContent{
+  width: 400px;
+  height: 400px;
+  padding: 0;
+}
+.bold-text{
+  font-weight: bold;
+  margin: 190px auto auto;
+}
+table {
+  width: 100%;
+}
+table th {
+  font-size: var(--font_middle);
+  font-weight: bold;
+  text-align: center;
+}
+table td {
+  font-size: var(--font_small);
+  font-weight: bold;
+  text-align: center;
+}
+
+table tr:hover td {
+  cursor: pointer;
+  background-color: var(--disabled);
+  transition: 0.3s linear;
+}

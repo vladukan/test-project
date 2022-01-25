@@ -1,0 +1,34 @@
+<h3 mat-dialog-title align="center">Ифнормация о планете: <b>{{title}}</b></h3>
+<div mat-dialog-content class="dialogContent">
+  <mat-spinner *ngIf="loading" style="margin: 150px auto auto"></mat-spinner>
+
+  <table mat-table *ngIf="!loading && !empty" [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Имя</th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+    <ng-container matColumnDef="height">
+      <th mat-header-cell *matHeaderCellDef> Рост</th>
+      <td mat-cell *matCellDef="let element"> {{element.height}} </td>
+    </ng-container>
+    <ng-container matColumnDef="mass">
+      <th mat-header-cell *matHeaderCellDef> Вес</th>
+      <td mat-cell *matCellDef="let element"> {{element.mass}} </td>
+    </ng-container>
+    <ng-container matColumnDef="birth_year">
+      <th mat-header-cell *matHeaderCellDef> Год рождения</th>
+      <td mat-cell *matCellDef="let element"> {{element.birth_year}} </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="columns"></tr>
+    <tr mat-row *matRowDef="let row; columns: columns;"></tr>
+  </table>
+
+  <p *ngIf="empty" class="noData bold-text">Нет данных о жителях планеты</p>
+
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button (click)="onClose()" type="button" style="margin: auto">Закрыть</button>
+</div>
+
+
+

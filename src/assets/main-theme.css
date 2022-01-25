@@ -1,0 +1,12 @@
+:root {
+  --primary: #0d5c61;
+  --success: #00A480;
+  --accent: #FF9F00;
+  --warn: #F10026;
+  --disabled: #b0b0b0;
+  --enabled: #fafafa;
+  --font_family: Roboto, "Helvetica Neue", sans-serif;
+  --font_small: 10px;
+  --font_middle: 12px;
+  --font_large: 16px;
+}

@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/main-theme.css';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+html, body {
+  font-family: var(--font_family);
+  margin: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+.loading {
+  position: absolute;
+  top: 0;
+}
+.mat-progress-spinner circle, .mat-spinner circle {
+  stroke: var(--primary);
+}
+.loading .mat-progress-bar-fill::after {
+  background-color: var(--accent) !important;
+}
+
+.snackbar{
+  background: var(--enabled);
+  color: black;
+}
+
+.snackbar-success{
+  background: var(--enabled);
+  color: var(--primary);
+}
+
+.snackbar-error{
+  background: var(--enabled);
+  color: var(--warn);
+}
+.noData {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--primary);
+  font-size: var(--font_large)
+}
+
+
